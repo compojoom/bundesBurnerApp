@@ -10,7 +10,7 @@ export function HomeStack() {
   return (
     <RootStack.Navigator mode="modal">
       <RootStack.Screen name="home" component={HomeScreen} />
-      <RootStack.Screen name="qrCode" component={QrCodeScreen} />
+      <RootStack.Screen name="scanQR" component={QrCodeScreen} />
     </RootStack.Navigator>
   );
 }

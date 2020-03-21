@@ -1,10 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {HomeComponent} from '../../components/Home/Home';
 
-export function HomeContainer() {
+export function HomeContainer({navigation}) {
     return (
-        <View>
-            <Text>Home container</Text>
-        </View>
+        <HomeComponent navigation={navigation}/>
     );
 }
