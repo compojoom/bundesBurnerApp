@@ -19,6 +19,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* bundesBurnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bundesBurnerTests.m */; };
 		6D4216A001F0835BDF37E765 /* libPods-bundesBurnerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609897904AA80689B4BB6F64 /* libPods-bundesBurnerTests.a */; };
+		E6D7120E24260A65004F9F6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D7120D24260A65004F9F6E /* GoogleService-Info.plist */; };
 		F20CB5B4E0C444D69F11272A /* libPods-bundesBurner-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC25E56428D3B47C0AE866D /* libPods-bundesBurner-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		9898D9F1A002C595E89CE6DD /* Pods-bundesBurner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundesBurner.release.xcconfig"; path = "Target Support Files/Pods-bundesBurner/Pods-bundesBurner.release.xcconfig"; sourceTree = "<group>"; };
 		B720B4172FDB673225596D17 /* libPods-bundesBurner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bundesBurner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC25E56428D3B47C0AE866D /* libPods-bundesBurner-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bundesBurner-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D7120D24260A65004F9F6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "bundesBurner/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0558B55CE3859E04E366A32 /* Pods-bundesBurner-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bundesBurner-tvOS.release.xcconfig"; path = "Target Support Files/Pods-bundesBurner-tvOS/Pods-bundesBurner-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* bundesBurner */ = {
 			isa = PBXGroup;
 			children = (
+				E6D7120D24260A65004F9F6E /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +197,6 @@
 				7D5E7F66FDA94632AF99462A /* Pods-bundesBurnerTests.debug.xcconfig */,
 				3B8F38A7388CDD477A0AEE40 /* Pods-bundesBurnerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +341,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				E6D7120E24260A65004F9F6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +639,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bundesBurner;
 				PRODUCT_NAME = bundesBurner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -654,7 +658,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bundesBurner;
 				PRODUCT_NAME = bundesBurner;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

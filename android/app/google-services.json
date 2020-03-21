@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "374536814363",
+    "firebase_url": "https://bundesburner.firebaseio.com",
+    "project_id": "bundesburner",
+    "storage_bucket": "bundesburner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374536814363:android:fdb4f80f817ef35e1e9dbe",
+        "android_client_info": {
+          "package_name": "com.bundesburner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374536814363-o5ij9a6k3k526lt6fgp86p4mvs1lbeqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDtGeG5NvCUPpuVxpgbxK9Ir1S0XeWQFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374536814363-o5ij9a6k3k526lt6fgp86p4mvs1lbeqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
