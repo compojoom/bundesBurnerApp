@@ -1,18 +1,42 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 
+const styles = StyleSheet.create({
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+});
 export function HomeComponent(props) {
-    const {navigation} = props
-    return (
-        <View>
-            <Text>Home container</Text>
+  const {navigation} = props;
+  return (
+    <View>
 
-            <Button title={"Zahlen"} onPress={() => {}} />
-            <Button title={"Empfangen"} onPress={() => {}} />
-            <Button title={"Qr Code Scannen"} onPress={() => {navigation.navigate('scanQR')}} />
-            <Button title={"Qr Code Zeigen"} onPress={() => {}} />
-            <Button title={"Wo kann ich mit GToken Bezahlen"} onPress={() => {}} />
-            <Button title={"Einstellungen"} onPress={() => {}} />
-        </View>
-    );
+      <View
+        style={{
+          flexDirection: 'column',
+          justifycontent: 'center',
+          alignItems: 'center',
+          margin: 20,
+        }}>
+        <Text style={{fontSize: 38}}>20</Text>
+        <Text>DiGi tokens</Text>
+      </View>
+      <View style={styles.row}>
+        <Button title={'Zahlen'} onPress={() => {}} />
+        <Button title={'Empfangen'} onPress={() => {}} />
+      </View>
+      <View style={styles.row}>
+        <Button
+          title={'Qr Code Scannen'}
+          onPress={() => {
+            navigation.navigate('scanQR');
+          }}
+        />
+        <Button title={'Qr Code Zeigen'} onPress={() => {}} />
+      </View>
+
+      <Button title={'Einstellungen'} onPress={() => {}} />
+    </View>
+  );
 }

@@ -6,9 +6,13 @@ const RootStack = createStackNavigator();
 const Stack = createStackNavigator();
 
 export function HelpStack() {
-    return (
-        <RootStack.Navigator mode="modal">
-            <RootStack.Screen name="help" component={HelpScreen} />
-        </RootStack.Navigator>
-    );
+  return (
+    <RootStack.Navigator mode="modal">
+      <RootStack.Screen
+        name="help"
+        options={{title: 'Hilfe'}}
+        component={HelpScreen}
+      />
+    </RootStack.Navigator>
+  );
 }

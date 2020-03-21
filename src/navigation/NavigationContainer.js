@@ -30,6 +30,7 @@ export function AppNavigationContainer() {
           name="Home"
           component={HomeStack}
           options={{
+              title: "Home",
             tabBarIcon: ({focused}) => (
               <TabIcon focused={focused} name={'home'} />
             ),
@@ -39,6 +40,7 @@ export function AppNavigationContainer() {
           name="Businesses"
           component={BusinessesStack}
           options={{
+              title: "Geschäfte",
             tabBarIcon: ({focused}) => (
               <TabIcon focused={focused} name={'map'} />
             ),
@@ -48,6 +50,7 @@ export function AppNavigationContainer() {
           name="Help"
           component={HelpStack}
           options={{
+            title: "Hilfe",
             tabBarIcon: ({focused}) => (
               <TabIcon focused={focused} name={'life-ring'} />
             ),

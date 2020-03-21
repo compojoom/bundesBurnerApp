@@ -9,7 +9,11 @@ const Stack = createStackNavigator();
 export function HomeStack() {
   return (
     <RootStack.Navigator mode="modal">
-      <RootStack.Screen name="home" component={HomeScreen} />
+      <RootStack.Screen
+        name="home"
+        options={{title: 'Home'}}
+        component={HomeScreen}
+      />
       <RootStack.Screen name="scanQR" component={QrCodeScreen} />
     </RootStack.Navigator>
   );

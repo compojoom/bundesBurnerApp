@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 
 export function QrCodeContainer() {
+  const [barcode, setBarcode] = useState(null);
   const dynamicStyles = StyleSheet.create({
     crosshairBorderHighlight: {opacity: 1},
   });
 
   return (
     <View style={{flex: 1}}>
+      <Text>{barcode && barcode.url}</Text>
       <RNCamera
         ref={ref => {
           this.camera = ref;
@@ -33,6 +35,10 @@ export function QrCodeContainer() {
         }}
         onGoogleVisionBarcodesDetected={({barcodes}) => {
           console.log(barcodes);
+
+          if (barcodes.length) {
+            setBarcode(barcodes[0]);
+          }
         }}>
         <View style={styles.overlay}>
           <View
@@ -75,8 +81,8 @@ export function QrCodeContainer() {
   );
 }
 
-const crosshairMargin = 10
-const crosshairBorderWidth = 8
+const crosshairMargin = 10;
+const crosshairBorderWidth = 8;
 
 const styles = StyleSheet.create({
   container: {
