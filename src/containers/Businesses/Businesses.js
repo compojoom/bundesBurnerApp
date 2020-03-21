@@ -1,10 +1,6 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {BusinessesComponent} from '../../components/Businesses/Businesses';
 
 export function BusinessesContainer() {
-    return (
-        <View>
-            <Text>Businesses container</Text>
-        </View>
-    );
+    return <BusinessesComponent />
 }
