@@ -11,7 +11,6 @@ export function HomeComponent(props) {
   const {navigation} = props;
   return (
     <View>
-
       <View
         style={{
           flexDirection: 'column',
@@ -33,7 +32,12 @@ export function HomeComponent(props) {
             navigation.navigate('scanQR');
           }}
         />
-        <Button title={'Qr Code Zeigen'} onPress={() => {}} />
+        <Button
+          title={'Qr Code Zeigen'}
+          onPress={() => {
+            navigation.navigate('myQrCode');
+          }}
+        />
       </View>
 
       <Button title={'Einstellungen'} onPress={() => {}} />
